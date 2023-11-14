@@ -1,5 +1,6 @@
-package com.encryption.encryption;
+package com.encryption.encryption.config;
 
+import com.encryption.encryption.config.EncryptionKeyConfig;
 import com.encryption.exception.EncryptionException;
 
 import com.encryption.exception.ExceptionCode;

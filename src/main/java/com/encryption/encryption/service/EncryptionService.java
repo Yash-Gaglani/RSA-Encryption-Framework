@@ -1,6 +1,8 @@
-package com.encryption.encryption;
+package com.encryption.encryption.service;
 
 
+import com.encryption.encryption.model.EncryptedObject;
+import com.encryption.encryption.model.PublicCert;
 import com.encryption.exception.EncryptionException;
 
 public interface EncryptionService {

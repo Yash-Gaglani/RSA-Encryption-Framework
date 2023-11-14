@@ -1,6 +1,8 @@
-package com.encryption.encryption;
+package com.encryption.encryption.controller;
 
 
+import com.encryption.encryption.model.PublicCert;
+import com.encryption.encryption.service.EncryptionService;
 import com.encryption.exception.EncryptionException;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;

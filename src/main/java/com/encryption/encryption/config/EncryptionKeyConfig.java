@@ -1,4 +1,4 @@
-package com.encryption.encryption;
+package com.encryption.encryption.config;
 
 import java.util.HashMap;
 import java.util.Map;

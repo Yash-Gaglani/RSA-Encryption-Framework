@@ -1,9 +1,9 @@
-package com.encryption.encryption.impl;
+package com.encryption.encryption.service.impl;
 
-import com.encryption.encryption.EncryptedObject;
-import com.encryption.encryption.EncryptionKeyManager;
-import com.encryption.encryption.EncryptionService;
-import com.encryption.encryption.PublicCert;
+import com.encryption.encryption.model.EncryptedObject;
+import com.encryption.encryption.config.EncryptionKeyManager;
+import com.encryption.encryption.service.EncryptionService;
+import com.encryption.encryption.model.PublicCert;
 import com.encryption.exception.EncryptionException;
 import com.encryption.exception.ExceptionCode;
 import java.security.InvalidKeyException;

@@ -1,4 +1,4 @@
-package com.encryption.encryption;
+package com.encryption.encryption.model;
 
 import lombok.Getter;
 import lombok.Setter;
