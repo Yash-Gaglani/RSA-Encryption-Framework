@@ -118,7 +118,7 @@ public class EncryptionKeyManager {
             }
             String privateKeyPEM = encryptionKeyConfig.getPrivateKeys().get(keyId);
             if (StringUtils.isAllBlank(privateKeyPEM)) {
-                throw new BadRequestException(ExceptionCode.BAD_REQUEST,
+                throw new EncryptionException(ExceptionCode.BAD_REQUEST,
                     "Private key is null/blank.");
             }
             // strip of header, footer, newlines, whitespaces
