@@ -18,8 +18,8 @@ To use the RSA Encryption Framework, follow these steps:
 
     ```properties
     # RSA Keys Configuration
-    rsa.publicKey=YOUR_PUBLIC_KEY_HERE
-    rsa.privateKey=YOUR_PRIVATE_KEY_HERE
+    app.encryption.publicKeys.key001=YOUR_PUBLIC_KEY_HERE
+    app.encryption.privateKeys.key001==YOUR_PRIVATE_KEY_HERE
     ```
 
     Replace `YOUR_PUBLIC_KEY_HERE` and `YOUR_PRIVATE_KEY_HERE` with your actual public and private RSA keys.
@@ -33,6 +33,8 @@ To use the RSA Encryption Framework, follow these steps:
     The application will start, and you can access the APIs described below.
 
 ## API Endpoints
+
+
 
 ### 1. Get Public Certificate
 
