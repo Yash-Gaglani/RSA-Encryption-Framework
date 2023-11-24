@@ -9,6 +9,7 @@ import com.encryption.exception.ExceptionCode;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 import java.security.PrivateKey;
+import java.util.Base64;
 import javax.crypto.BadPaddingException;
 import javax.crypto.Cipher;
 import javax.crypto.IllegalBlockSizeException;
@@ -68,6 +69,18 @@ public class EncryptionServiceImpl implements EncryptionService {
     @Override
     public byte[] decrypt(EncryptedObject encryptedObject) throws EncryptionException {
         return decrypt(encryptedObject.getContent(), encryptedObject.getKeyId());
+    }
+
+    @Override
+    public String encryptPlainText(String plainText) throws EncryptionException {
+        byte[] encryptedByteArray = encrypt(Base64.getDecoder().decode(plainText));
+        return Base64.getEncoder().encodeToString(encryptedByteArray);
+    }
+
+    @Override
+    public String decryptAsPlainText(String encryptedBase64String) throws EncryptionException {
+        byte[] decryptedByteArray = decrypt(Base64.getDecoder().decode(encryptedBase64String));
+        return Base64.getEncoder().encodeToString(decryptedByteArray);
     }
 
     @Override

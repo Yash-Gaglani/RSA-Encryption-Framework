@@ -16,5 +16,9 @@ public interface EncryptionService {
     byte[] decrypt(byte[] plainObject, String keyId) throws EncryptionException;
     byte[] decrypt(EncryptedObject encryptedObject) throws EncryptionException;
 
+    String encryptPlainText(String plainText) throws EncryptionException;
+
+    String decryptAsPlainText(String encryptedBase64String) throws EncryptionException;
+
     PublicCert getCert() throws EncryptionException;
 }
