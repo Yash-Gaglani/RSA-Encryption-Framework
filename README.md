@@ -4,6 +4,8 @@
 
 Welcome to the RSA Encryption Framework! This framework provides a simple API for RSA encryption and decryption, allowing users to easily integrate RSA cryptography into their applications. The framework includes three main APIs: one to retrieve the public certificate, one to encrypt plaintext, and one to decrypt an encrypted Base64 string.
 
+You can run the application and start swagger using http://localhost:5000/encryption/swagger-ui/index.html#/
+
 ## Getting Started
 
 To use the RSA Encryption Framework, follow these steps:
