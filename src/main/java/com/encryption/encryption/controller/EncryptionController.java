@@ -15,7 +15,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@Tag(name = "Utility API(s)", description = "Utility API")
 public class EncryptionController {
 
     @Autowired
